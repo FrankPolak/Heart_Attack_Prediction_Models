@@ -1,4 +1,5 @@
-# Machine_Learning
+# Heart_Attack_Prediction_Models
+### Machine Learning Models for the Prediction of Myocardial Infraction Likelyhood with Validations
 
 ### About the Project
 This repository contains various machine learning models used to predict the likelyhood of a myocardial infraction (MI) based on the following characteristics:
