@@ -2,7 +2,7 @@
 ## Machine Learning Models for the Prediction of Myocardial Infraction Likelyhood with Validations
 
 ### About the Project
-This repository contains various machine learning models used to predict the likelyhood of a myocardial infraction (MI) based on the following characteristics:
+This repository contains various machine learning models used to predict the likelihood of a myocardial infraction (MI) based on the following characteristics:
 age, sex, chest pain (type), resting systolic blood pressure (bp), cholesterol, fasting blood sugar > 20 mg/dl (Y/N), resting ECG results, maximum heart rate, and exercise-induced angine (Y/N).
 * The dataset includes observations for 303 patients, of which 138 suffered a MI.
 * The mean age of the patients was 54, with a standard deviation of 9.08 years.
