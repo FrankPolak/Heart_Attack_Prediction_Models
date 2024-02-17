@@ -26,3 +26,20 @@ for pred, test in comparison:
 
 accuracy = correct / len(comparison)
 print(accuracy) # 0.8217821782178217
+
+# 5. Increase the Accuracy
+correct = 0
+inconclusive = 0
+total = len(comparison)
+for pred, test in comparison:
+    if pred > 0.2 and pred < 0.8:
+        inconclusive += 1
+    elif pred < 0.5 and test == 0 or pred >= 0.5 and test == 1:
+        correct += 1
+
+accuracy = (correct + undecided) / total
+print(accuracy)    # 0.8217821782178217
+print(f"total: {total}")    # 101
+print(f"correct: {correct}")    # 36
+print(f"inconclusive: {inconclusive}")    # 62
+print(f"wrong: {total - correct - inconclusive}")    # 3
