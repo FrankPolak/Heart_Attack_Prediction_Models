@@ -19,7 +19,7 @@ By rounding the predicted values up or down (<0.5 = 0 and >=0.5 = 1) we get the 
 ### 2. KNN Classification
 A K-nearest neighbours classification was done considering the reliability of two of the variables in predicting the risk of myocardial infraction. From the dataset, the biggest risk factors for MI are age, high blood pressure, high cholesterol, and physical inactivity (assessed here by heart rate). By analysing the combination of two of these factors at a time, it was found that age and maximum heart rate provide the most accurate predictions when used to construct a KNN model. Nonetheless, the accuracy obtained was no sufficient to support the reliability of this approach. The model constructed uses the Minikowski metric with p=2 to apply Euclidean distances. The optimal nearest neighbours for this model was 18.\
 **The accuracy obtained was <ins>72.3%</ins>**
-![Image 1](graphs/KNN-train.jpg) | ![Image 2](graphs/KNN-test.jpg)
+![Image 1](graphs/KNN-train.png) | ![Image 2](graphs/KNN-test.png)
 :-------------------------:|:-------------------------:
 *Visualisation of the KNN classification model for the training set*        |  *Visualisation of the KNN classification model for the training set*
 
