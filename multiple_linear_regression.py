@@ -37,7 +37,7 @@ for pred, test in comparison:
     elif pred < 0.5 and test == 0 or pred >= 0.5 and test == 1:
         correct += 1
 
-accuracy = (correct + undecided) / total
+accuracy = (correct + inconclusive) / total
 print(accuracy)    # 0.8217821782178217
 print(f"total: {total}")    # 101
 print(f"correct: {correct}")    # 36
