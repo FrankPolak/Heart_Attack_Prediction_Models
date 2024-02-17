@@ -16,6 +16,10 @@ The first model for predicting the chances of a heart attack is a multiple linea
 By rounding the predicted values up or down (<0.5 = 0 and >=0.5 = 1) we get the accuracy of the models predictions.\
 **The accuracy obtained was <ins>82.2%</ins>**
 
+
+One way to increase the accuracy in a clinical scenario would be to define a range of predicted values which would yield an "inconclusive" result. By setting the range of inconclusive y_pred values to >0.2 and <0.8 we can increase the accuracy to as much as **<ins>97%</ins>**.\
+In this case 39 patients from the test set receive a prediction that is 97% accurate. However, this approach would exclude approx. 60% of patients from receiving MI risk assessment.
+
 ### 2. KNN Classification
 A K-nearest neighbours classification was done considering the reliability of two of the variables in predicting the risk of myocardial infraction. From the dataset, the biggest risk factors for MI are age, high blood pressure, high cholesterol, and physical inactivity (assessed here by heart rate). By analysing the combination of two of these factors at a time, it was found that age and maximum heart rate provide the most accurate predictions when used to construct a KNN model. Nonetheless, the accuracy obtained was no sufficient to support the reliability of this approach. The model constructed uses the Minikowski metric with p=2 to apply Euclidean distances. The optimal nearest neighbours for this model was 18.\
 **The accuracy obtained was <ins>72.3%</ins>**
