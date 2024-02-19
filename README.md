@@ -39,6 +39,6 @@ Using the determined parameters, the ANN was compiled and trained. It was then e
 **The accuracy obtained was <ins>82.2%</ins>**
 
 Similarly to the multiple linear regression model, the ANN was further evaluated by taking into account "inconclusive" values (>0.2 and <0.8). Using this approach, the accuracy of the model increased to **<ins>93.1%</ins>**.\
-Although the accuracy is lower than in the multiple linear regression approach, the number of inconclusive results has dropped significantly from
+Although the accuracy is lower than in the multiple linear regression approach, the number of inconclusive results has dropped significantly from 62 to 24, thus increasing the number of patients who would be able to get a result to 76.2%, of which 10% would receive an incorrect risk assessment.
 
 
