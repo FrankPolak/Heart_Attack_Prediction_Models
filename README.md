@@ -27,5 +27,18 @@ A K-nearest neighbours classification was done considering the reliability of tw
 :-------------------------:|:-------------------------:
 *Visualisation of the KNN classification model for the training set*        |  *Visualisation of the KNN classification model for the training set*
 
+### 3. Deep Learning with Artificial Neural Networks
+An artificial neural network (ANN) was constructed using TensorFlow, taking into account all the variables. Initially, a neural network with a single hidden layer was considered. The ANN is of the Sequential class (TensorFlow, Keras) with a rectifier activation function for the hidden layer and a sigmoid activation function for the output layer, to allow for the assessment of the probability of the output. Initial tests were done to determine the optimal number of nodes in the hidden layer and the optimal number of epochs over which the model will be trained. The results are the following graphs:
+![ANN nodes](graphs/ANN_nodes.png) | ![ANN epochs](graphs/ANN_epochs.png)
+:-------------------------:|:-------------------------:
+*ANN accuracy over the number of nodes in the hidden layer*        |  *ANN accuracy over the number of epochs*
+:-------------------------:|:-------------------------:
+Optimal number of nodes in the hidden layer: **84**                |  Optimal number of epochs: **100**
+
+Using the determined parameters, the ANN was compiled and trained. It was then evaluated using the test set.\
+**The accuracy obtained was <ins>82.2%</ins>**
+
+Similarly to the multiple linear regression model, the ANN was further evaluated by taking into account "inconclusive" values (>0.2 and <0.8). Using this approach, the accuracy of the model increased to **<ins>93.1%</ins>**.\
+Although the accuracy is lower than in the multiple linear regression approach, the number of inconclusive results has dropped significantly from
 
 
