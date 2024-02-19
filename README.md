@@ -32,13 +32,12 @@ An artificial neural network (ANN) was constructed using TensorFlow, taking into
 ![ANN nodes](graphs/ANN_nodes.png) | ![ANN epochs](graphs/ANN_epochs.png)
 :-------------------------:|:-------------------------:
 *ANN accuracy over the number of nodes in the hidden layer*        |  *ANN accuracy over the number of epochs*
-:-------------------------:|:-------------------------:
 Optimal number of nodes in the hidden layer: **84**                |  Optimal number of epochs: **100**
 
 Using the determined parameters, the ANN was compiled and trained. It was then evaluated using the test set.\
 **The accuracy obtained was <ins>82.2%</ins>**
 
 Similarly to the multiple linear regression model, the ANN was further evaluated by taking into account "inconclusive" values (>0.2 and <0.8). Using this approach, the accuracy of the model increased to **<ins>93.1%</ins>**.\
-Although the accuracy is lower than in the multiple linear regression approach, the number of inconclusive results has dropped significantly from 62 to 24, thus increasing the number of patients who would be able to get a result to 76.2%, of which 10% would receive an incorrect risk assessment.
+Although the accuracy is lower than in the multiple linear regression approach, the number of inconclusive results has dropped significantly from 62 to 24, thus increasing the number of patients who would be able to get a result to 76.2%, of which 11% would receive an incorrect risk assessment, compared to 8.3% in the multiple linear regression approach. Hence, the risks and benefits would have to be weighed to consider whether the benefit of being able to assess more patients (197.4%) is worth the decrease in accuracy.
 
 
