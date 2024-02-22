@@ -1,7 +1,7 @@
 # Heart_Attack_Prediction_Models
 Machine Learning Models for the Prediction of Myocardial Infraction Likelihood with Validations
 
-<ins>**Index**</ins>
+### Index
 1) Multiple Linear Regression
 2) KNN Classification
 3) Deap Learning with Artificial Neural Networks
